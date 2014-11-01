@@ -1,5 +1,7 @@
 
 var marmotaTrack = "Track";
+var marmotaMail = "Email";
+var marmotaName = "Username";
 
 var docCookies = {
   getItem: function (sKey) {

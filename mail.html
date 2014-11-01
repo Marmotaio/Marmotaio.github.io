@@ -76,8 +76,8 @@ $(function() {
 submitButton.addEventListener('click', function () {
     var userEmail = document.getElementById("email").value;
     var userName = document.getElementById("username").value;
-    docCookies.setItem(email,userEmail);
-    docCookies.setItem(username,userName);
+    docCookies.setItem(marmotaMail,userEmail);
+    docCookies.setItem(marmotaName,userName);
     window.analytics.identify({name: userName, email: userEmail, Track: track});
     window.analytics.trackForm(form, 'Email submitted', {name: userName, email: userEmail, Track: track});
 });
