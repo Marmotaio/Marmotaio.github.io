@@ -71,7 +71,7 @@
                         <li>Get predictions for stock data</li>
                     </ul>
 
-                    <a class="button-choose pure-button" id="stockPrediction" value="stockPrediction" href="#">Choose</a>
+                    <a class="button-choose pure-button" id="stockPrediction" value="stockPrediction" href="mail.html">Choose</a>
                 </div>
             </div>
         </div> <!-- end tracks -->
@@ -85,22 +85,22 @@
         </div>
 
         <script type="text/javascript">
-            window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
-            window.analytics.load("HPsNH111V1");
-            window.analytics.page("Start");
+        window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+        window.analytics.load("HPsNH111V1");
+        window.analytics.page("Start");
 
-            var tweetAnalysisLink = document.getElementById('tweetanalysis');
-            var stockPredictionLink = document.getElementById('stockprediction');
+        var tweetAnalysisLink = document.getElementById('tweetanalysis');
+        var stockPredictionLink = document.getElementById('stockprediction');
 
-            tweetAnalysisLink.addEventListener('click', function () {
-                docCookies.setItem(marmotaTrack,tweetAnalysisLink.id);
-                window.analytics.trackLink(tweetAnalysisLink, 'Track selected', {marmotaTrack: tweetAnalysisLink.id});
-            });
+        tweetAnalysisLink.addEventListener('click', function () {
+            docCookies.setItem(marmotaTrack,tweetAnalysisLink.id);
+            window.analytics.trackLink(tweetAnalysisLink, 'Track selected', {marmotaTrack: tweetAnalysisLink.id});
+        });
 
-            stockPredictionLink.addEventListener('click', function () {
-                docCookies.setItem(marmotaTrack,stockPredictionLink.id);
-                window.analytics.trackLink(stockPredictionLink, 'Track selected', {marmotaTrack: stockPredictionLink.id});
-            });
+        stockPredictionLink.addEventListener('click', function () {
+            docCookies.setItem(marmotaTrack,stockPredictionLink.id);
+            window.analytics.trackLink(stockPredictionLink, 'Track selected', {marmotaTrack: stockPredictionLink.id});
+        });
 
         </script>
 
