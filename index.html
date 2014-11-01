@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marmota.io teaches you real worl big data and data science projects">
+    <title>Marmota.io | Learn real world big data and data science projects</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="http://faviconist.com/icons/55a608a7acd0e6315b94518e86e772c0/favicon.ico" />
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading">Marmota.io</a>
+        <ul>
+            <li class="pure-menu-selected"><a href="index.html">Tracks</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <h1 class="banner-head">
+            Marmota.io<br>
+            Real world big data and data science projects.
+        </h1>
+
+    </div>
+
+    <div class="l-content">
+        <div class="information pure-g">
+            <div class="pure-u-1 pure-u-md-1-1">
+                <div class="l-box">
+                    <h3 class="information-head">Which track would you like to follow?</h3>
+                </div>
+            </div>
+        </div>
+        <div class="tracks pure-g">
+
+            <div class="pure-u-1 pure-u-md-1-2">
+                <div class="track track-tweetAnalysis">
+                    <div class="track-header">
+                        <h2>Track #1</h2>
+
+                        <span class="track-price">
+                            Tweet analysis <span>free</span>
+                        </span>
+                    </div>
+
+                    <ul class="track-list">
+                        <li>Analyze tweet about your project</li>
+                    </ul>
+
+                    <a class="button-choose pure-button" id="tweetAnalysis" value="tweetAnalysis" href="#">Choose</a>
+                </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-2">
+                <div class="track track-stockPrediction">
+                    <div class="track-header">
+                        <h2>Track #2</h2>
+
+                        <span class="track-price">
+                            Predict stocks <span>free</span>
+                        </span>
+                    </div>
+
+                    <ul class="track-list">
+                        <li>Get predictions for stock data</li>
+                    </ul>
+
+                    <a class="button-choose pure-button" id="stockPrediction" value="stockPrediction" href="#">Choose</a>
+                </div>
+            </div>
+        </div> <!-- end tracks -->
+
+
+
+        <div class="footer l-box">
+            <p>
+                &copy; 2014 Marmota.io - Real world big data and data science projects.
+            </p>
+        </div>
+
+        <script type="text/javascript">
+            window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+            window.analytics.load("HPsNH111V1");
+            window.analytics.page("Start");
+
+            var tweetAnalysisLink = document.getElementById('tweetanalysis');
+            var stockPredictionLink = document.getElementById('stockprediction');
+
+            tweetAnalysisLink.addEventListener('click', function () {
+                docCookies.setItem(marmotaTrack,tweetAnalysisLink.id);
+                window.analytics.trackLink(tweetAnalysisLink, 'Track selected', {marmotaTrack: tweetAnalysisLink.id});
+            });
+
+            stockPredictionLink.addEventListener('click', function () {
+                docCookies.setItem(marmotaTrack,stockPredictionLink.id);
+                window.analytics.trackLink(stockPredictionLink, 'Track selected', {marmotaTrack: stockPredictionLink.id});
+            });
+
+        </script>
+
+    </body>
+    </html>
